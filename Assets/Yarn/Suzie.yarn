@@ -1,0 +1,25 @@
+title: Suzie.Start
+tags: 
+colorID: 0
+position: -50,-50
+---
+Suzie: Hey! 
+Jamie: Oh, you're excited today. 
+Suzie: Yes! What to know why? 
+[[Not particularly |Suzie.NotInterested]]
+[[Yeah! |Suzie.Interested]]
+===
+title: Suzie.NotInterested
+tags: 
+colorID: 0
+position: 70,-270
+---
+Suzie: Okay, fuck off you smartass
+===
+title: Suzie.Interested
+tags: 
+colorID: 0
+position: 290,-270
+---
+Suzie: Something lewd that I can't write here
+===

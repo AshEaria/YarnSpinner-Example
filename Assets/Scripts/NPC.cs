@@ -5,14 +5,18 @@ using UnityEngine;
 public class NPC : MonoBehaviour
 {
     public static NPC ActiveNPC { get; private set; }
+    public string YarnStartNode { get { return yarnStartNode;  } }
 
 #pragma warning disable 0649
     [SerializeField] GameObject chatBubble;
+    [SerializeField] string yarnStartNode = "Start";
+    [SerializeField] YarnProgram yarnFile; 
 #pragma warning restore 0649
 
     private void Start()
     {
         chatBubble.SetActive(false);
+        DialogUI.Instance.dialogueRunner.Add(yarnFile); 
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
